@@ -10,7 +10,7 @@ jobs:
             - name: step1
               uses: actions/checkout@v2
             - name: step2
-              run: env | sort  
+              run: date +%A%d%B  
     job2:
         name: second job
         runs-on: windows-latest
@@ -18,7 +18,7 @@ jobs:
             - name: step1
               uses: actions/checkout@v2
             - name: step2
-              run: "Get-ChildItem Env: | Sort-Object Name" 
+              run: "Get-Date -DisplayHint Date" 
     job3:
         name: third job
         runs-on: macos-latest
