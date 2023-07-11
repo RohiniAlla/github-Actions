@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
     job1:
-        name: first job
+        name: ubuntu
         runs-on: ubuntu-latest
         steps:
             - name: step1
@@ -12,7 +12,7 @@ jobs:
             - name: step2
               run: date +%A%d%B  
     job2:
-        name: second job
+        name: windows
         runs-on: windows-latest
         steps:
             - name: step1
@@ -20,7 +20,7 @@ jobs:
             - name: step2
               run: "Get-Date -DisplayHint Date" 
     job3:
-        name: third job
+        name: macos
         runs-on: macos-latest
         steps:
             - name: step1
@@ -28,8 +28,13 @@ jobs:
             - name: step2
               run: date "+%Y-%m-%d"
     job4:
+<<<<<<< HEAD
         name: fourth job
         runs-on: ubuntu-latest
+=======
+        name: depends
+        runs-on: ubuntu-latest  
+>>>>>>> 77e8e88 (third commit)
         needs: [job1, job2, job3]
         steps:
             - name: step1
