@@ -10,9 +10,9 @@ jobs:
         - name: checkout
           uses: actions/checkout@v2
         - name: upload
-          uses: actions/upload-artifact@v3.1.2
+          uses: actions/upload-artifact@v3.0.0
         - name: download
-          uses: actions/download-artifact@v3.1.2
+          uses: actions/download-artifact@v3.0.0
           with: 
             name: ${{ env.ARTIFACT_ENVIRONMENT_VARIABLE }}
             path: .
