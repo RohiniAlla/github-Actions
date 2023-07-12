@@ -10,7 +10,7 @@ jobs:
         - name: step1
           uses: actions/checkout@v2
         - name: step2
-          uses: actions/uploadartifact@v2
+          uses: actions/upload-artifact@v3.1.2
           with: 
-            name: ${{ env.ARTIFACT_ENVIRONMENT_VARIABLE }}"
+            name: ${{ env.ARTIFACT_ENVIRONMENT_VARIABLE }}
             path: .
