@@ -33,6 +33,6 @@ jobs:
             - name: step1
               uses: actions/checkout@v2
             - name: step2 
-              needs: [job1, job2, job3]
+              needs: [ubuntu, windows, macos]
 
         
