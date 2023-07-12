@@ -11,6 +11,8 @@ jobs:
           uses: actions/checkout@v2
         - name: step2
           uses: actions/upload-artifact@v3.1.2
+        - name: step3
+          uses: actions/download-artifact@3.1.2
           with: 
             name: ${{ env.ARTIFACT_ENVIRONMENT_VARIABLE }}
             path: .
