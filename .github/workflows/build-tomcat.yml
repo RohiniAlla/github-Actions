@@ -41,4 +41,5 @@ jobs:
     - name: Compile Tomcat
       run: |
         cd ./tomcat
-        mvn -f dir/pom.xml package
+        mvn clean install
+        mvn tomcat7:run
