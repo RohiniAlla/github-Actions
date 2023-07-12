@@ -42,7 +42,7 @@ jobs:
       run: cp -v tomcat-users.xml ./tomcat/tomcat-users.xml
     
     - name: Copy pom.xml into Tomcat configuration directory
-      run: cp -v pom.xml ./tomcat/conf/pom.xml
+      run: cp -v pom.xml ./tomcat/pom.xml
       
 
     - name: Compile Tomcat
