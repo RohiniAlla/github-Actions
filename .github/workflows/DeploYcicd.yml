@@ -19,7 +19,7 @@ jobs:
     - name: upload artifact
       uses: actions/checkout@v2
     - name: upload artifactory
-      uses: actions/uploadartifact@v2 
+      uses: actions/upload-artifact@v3.0.0 
       with:
         path: .
         artifact_name: Crazy
