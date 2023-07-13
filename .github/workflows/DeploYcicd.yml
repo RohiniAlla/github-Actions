@@ -1,0 +1,23 @@
+name: DevelopCI/CDpipeline
+
+on: [push]
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out pythonfile
+      uses: actions/checkout@v2
+
+    - name: run the script
+      run: 
+       cd myapp
+       python hello.py
+
+  build:
+    needs: Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: upload artifact
+    - uses: actions/checkout@v2
+    - uses: actions/uploadartifact@v2 
