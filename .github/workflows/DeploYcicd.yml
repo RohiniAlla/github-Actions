@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: upload artifact
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: upload artifactory
-    - uses: actions/uploadartifact@v2 
+      uses: actions/uploadartifact@v2 
       with:
         path: ./myapp
         artifact_name: Crazy
