@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: check out pythonfile
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
 
     - name: run the script
       run: python hello.py
@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: upload artifact
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
     - name: upload artifactory
-      uses: actions/upload-artifact@v3.0.0 
+      uses: actions/upload-artifact@main 
       with:
         path: .
         artifact_name: Crazy
